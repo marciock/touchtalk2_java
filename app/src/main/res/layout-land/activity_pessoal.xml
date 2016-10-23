@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pessoal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f3e5f5"
+    tools:context="com.acessibility.kdezen.touchtalk.PessoalActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:id="@+id/LayoutMyPessoal">
+
+
+        <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/LayoutComer">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgComer"
+                    android:src="@drawable/comer"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Comer"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutDormir"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageDormir"
+                    android:src="@drawable/dormir"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dormir"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutEscovar"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageEscovarOsDentes"
+                    android:src="@drawable/escovarosdentes"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Escovar Os \n Dentes"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutTomar"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageTomarBanho"
+                    android:src="@drawable/tomarbanho"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tomar Banho"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
